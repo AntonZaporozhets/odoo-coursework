@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shtepsel_order_tree" model="ir.ui.view">
+        <field name="name">shtepsel.order.tree</field>
+        <field name="model">shtepsel.order</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="order_date"/>
+                <field name="client_id" widget="many2one_tags"/>
+                <field name="supplier_id" widget="many2one_tags"/>
+                <field name="order_cost"/>
+                <field name="order_weight"/>
+                <field name="order_volume"/>
+                <field name="distance"/>
+                <field name="delivery_cost"/>
+                <field name="delivery_date" class="text-center"/>
+                <field name="delivery_status"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="shtepsel_order_form" model="ir.ui.view">
+        <field name="name">shtepsel.order.form</field>
+        <field name="model">shtepsel.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <field name="delivery_status" widget="statusbar" options="{'clickable': '0'}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <h2>
+                            Order
+                            <field name="name" nolabel="1"/>
+                            from
+                            <field name="order_date" nolabel="1"/>
+                        </h2>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="supplier_id" widget="many2one_tags"/>
+                            <field name="supplier_city"/>
+                            <field name="client_id" widget="many2one_tags"/>
+                            <field name="client_city"/>
+                        </group>
+                        <group>
+                            <field name="delivery_date"/>
+                            <field name="delivery_cost"/>
+                            <label for="distance"/>
+                            <div class="o_row">
+                                <field name="distance"/>
+                                <span>km</span>
+                            </div>
+                            <label for="order_weight"/>
+                            <div class="o_row">
+                                <field name="order_weight"/>
+                                <span>kg</span>
+                            </div>
+                            <label for="order_volume"/>
+                            <div class="o_row">
+                                <field name="order_volume"/>
+                                <span>m<sup>3</sup></span>
+                            </div>
+                        </group>
+                    </group>
+                    <separator/>
+                    <field name="order_line_ids">
+                        <tree editable="bottom">
+                            <control>
+                                <create name="add_product_control" string="Add a product"/>
+                            </control>
+                            <field name="product_id" widget="many2one_tags"/>
+                            <field name="price"/>
+                            <field name="count"/>
+                            <field name="cost"/>
+                        </tree>
+                    </field>
+                    <separator/>
+                    <group>
+                        <h5 class="float-right text-right">Total:
+                            <field name="order_cost" nolabel="1"/>
+                        </h5>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="seq_shtepsel_order" model="ir.sequence">
+        <field name="name">Order Sequence</field>
+        <field name="code">shtepsel.order</field>
+        <field name="padding">4</field>
+    </record>
+
+    <record id="shtepsel_order_action" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,form</field>
+        <field name="res_model">shtepsel.order</field>
+    </record>
+
+    <menuitem id="shtepsel_order_menu"
+              action="shtepsel_order_action"
+              parent="shtepsel_ordering_menu"
+              name="Orders" sequence="100"/>
+
+</odoo>

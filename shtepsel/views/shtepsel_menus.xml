@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <menuitem id="shtepsel_main_menu"
+            web_icon="shtepsel,static/desription/icon.png"
+            name="Shtepsel" sequence="100"/>
+
+  <menuitem id="shtepsel_ordering_menu"
+            parent="shtepsel_main_menu"
+            name="Ordering" sequence="100"/>
+
+  <menuitem id="shtepsel_transportation_menu"
+            parent="shtepsel_main_menu"
+            name="Transportation" sequence="200"/>
+
+  <menuitem id="shtepsel_reports_menu"
+            parent="shtepsel_main_menu"
+            name="Reports" sequence="300"/>
+
+  <menuitem id="shtepsel_settings_menu"
+            parent="shtepsel_main_menu"
+            name="Settings" sequence="400"/>
+
+</odoo>

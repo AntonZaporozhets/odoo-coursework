@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="shtepsel_route_tree" model="ir.ui.view">
+        <field name="name">shtepsel.route.tree</field>
+        <field name="model">shtepsel.route</field>
+        <field name="arch" type="xml">
+            <tree editable="top" create="false" edit="false" expand="1" decoration-warning="delivery_confirm==False"
+                  decoration-success="delivery_confirm==True" decoration-danger="is_delayed==True">
+                <field name="route_number_id" invisible="1"/>
+                <field name="carrier_id" widget="many2one_tags"/>
+                <field name="order_ids" widget="many2many_tags"/>
+                <field name="weight_segment" invisible="1"/>
+                <field name="volume_segment" invisible="1"/>
+                <field name="point_arrival_time"/>
+                <field name="point"/>
+                <field name="loading_status"/>
+                <field name="order_id" widget="many2one_tags"/>
+                <field name="distance_segment"/>
+                <field name="is_delayed" invisible="1"/>
+                <field name="efficiency"/>
+                <field name="delivery_confirm" class="text-center"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="shtepsel_route_search" model="ir.ui.view">
+       <field name="name">shtepsel.route.search</field>
+       <field name="model">shtepsel.route</field>
+       <field name="arch" type="xml">
+           <search>
+               <filter name="group_by_route_number" string="Route number" context="{'group_by': 'route_number_id'}"/>
+           </search>
+       </field>
+    </record>
+
+    <record id="shtepsel_route_graph" model="ir.ui.view">
+        <field name="name">shtepsel.route.graph</field>
+        <field name="model">shtepsel.route</field>
+        <field name="arch" type="xml">
+            <graph type="pie">
+                <field name="point_arrival_time" interval="day"/>
+                <field name="efficiency" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="seq_shtepsel_route" model="ir.sequence">
+        <field name="name">Route Sequence</field>
+        <field name="code">shtepsel.route</field>
+        <field name="padding">4</field>
+    </record>
+
+    <record id="shtepsel_route_action" model="ir.actions.act_window">
+        <field name="name">Routes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,graph</field>
+        <field name="res_model">shtepsel.route</field>
+        <field name="context">{'search_default_group_by_route_number': 1}</field>
+    </record>
+
+    <menuitem id="shtepsel_route_menu"
+              action="shtepsel_route_action"
+              parent="shtepsel_transportation_menu"
+              name="Routes" sequence="200"/>
+
+</odoo>

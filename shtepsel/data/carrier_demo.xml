@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="car_1" model="shtepsel.carrier">
+        <field name="name">AA7856AB</field>
+        <field name="carrier_id" ref="shtepsel.res_partner_carrier_1"/>
+        <field name="driver_id" ref="shtepsel.res_partner_driver_1"/>
+        <field name="max_weight">1000</field>
+        <field name="max_volume">14.4</field>
+        <field name="max_height">2.4</field>
+        <field name="max_length">3</field>
+        <field name="average_speed">90</field>
+        <field name="status">free</field>
+        <field name="act_location"/>
+    </record>
+    <record id="car_2" model="shtepsel.carrier">
+        <field name="name">BH2345AH</field>
+        <field name="carrier_id" ref="shtepsel.res_partner_carrier_2"/>
+        <field name="driver_id" ref="shtepsel.res_partner_driver_2"/>
+        <field name="max_weight">500</field>
+        <field name="max_volume">6</field>
+        <field name="max_height">1.5</field>
+        <field name="max_length">2</field>
+        <field name="average_speed">100</field>
+        <field name="status">free</field>
+    </record>
+    <record id="car_3" model="shtepsel.carrier">
+        <field name="name">BC8765AB</field>
+        <field name="carrier_id" ref="shtepsel.res_partner_carrier_3"/>
+        <field name="driver_id" ref="shtepsel.res_partner_driver_3"/>
+        <field name="max_weight">10000</field>
+        <field name="max_volume">54</field>
+        <field name="max_height">3</field>
+        <field name="max_length">6</field>
+        <field name="average_speed">80</field>
+        <field name="status">free</field>
+    </record>
+    <record id="car_4" model="shtepsel.carrier">
+        <field name="name">BC1234AB</field>
+        <field name="carrier_id" ref="shtepsel.res_partner_carrier_3"/>
+        <field name="driver_id" ref="shtepsel.res_partner_driver_4"/>
+        <field name="max_weight">200</field>
+        <field name="max_volume">1.6</field>
+        <field name="max_height">1</field>
+        <field name="max_length">2</field>
+        <field name="average_speed">110</field>
+        <field name="status">free</field>
+    </record>
+    <record id="car_5" model="shtepsel.carrier">
+        <field name="name">AA7777AB</field>
+        <field name="carrier_id" ref="shtepsel.res_partner_carrier_1"/>
+        <field name="driver_id" ref="shtepsel.res_partner_driver_5"/>
+        <field name="max_weight">800</field>
+        <field name="max_volume">9.6</field>
+        <field name="max_height">2</field>
+        <field name="max_length">2.4</field>
+        <field name="average_speed">90</field>
+        <field name="status">free</field>
+    </record>
+</odoo>

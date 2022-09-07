@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_partner_supplier_1" model="res.partner">
+        <field name="name">Kyiv-furniture</field>
+        <field name="city">Kyiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_supplier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_supplier_2" model="res.partner">
+        <field name="name">Odessa-wine</field>
+        <field name="city">Odessa</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_supplier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_supplier_3" model="res.partner">
+        <field name="name">Uman-mill</field>
+        <field name="city">Uman</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_supplier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_supplier_4" model="res.partner">
+        <field name="name">Mykolaiv-agropostach</field>
+        <field name="city">Mykolaiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_supplier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_supplier_5" model="res.partner">
+        <field name="name">Lviv-Halka</field>
+        <field name="city">Lviv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_supplier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+
+    <record id="res_partner_carrier_1" model="res.partner">
+        <field name="name">Cheetah KAT</field>
+        <field name="city">Kyiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_carrier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_carrier_2" model="res.partner">
+        <field name="name">Wildebeest Antelope OAT</field>
+        <field name="city">Odesa</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_carrier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_carrier_3" model="res.partner">
+        <field name="name">Lion LAT</field>
+        <field name="city">Lviv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_carrier"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+
+    <record id="res_partner_driver_1" model="res.partner">
+        <field name="name">Mykhailo Nechuiviter</field>
+        <field name="city">Kyiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_driver"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_driver_2" model="res.partner">
+        <field name="name">Petro Vykhor</field>
+        <field name="city">Odesa</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_driver"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_driver_3" model="res.partner">
+        <field name="name">Ihor Dremenchuk</field>
+        <field name="city">Lviv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_driver"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_driver_4" model="res.partner">
+        <field name="name">Dmytro Vodiychuk</field>
+        <field name="city">Lviv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_driver"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_driver_5" model="res.partner">
+        <field name="name">Oleg Drayvovyi</field>
+        <field name="city">Kyiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_driver"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+
+    <record id="res_partner_client_1" model="res.partner">
+        <field name="name">Ivan Kupivets</field>
+        <field name="city">Vinnytsia</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_client"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_client_2" model="res.partner">
+        <field name="name">Olena Shoptenko</field>
+        <field name="city">Kyiv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_client"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_client_3" model="res.partner">
+        <field name="name">Oleg Lutsyshyn</field>
+        <field name="city">Ternopil</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_client"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_client_4" model="res.partner">
+        <field name="name">Halyna Teklishyn</field>
+        <field name="city">Lviv</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_client"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+    <record id="res_partner_client_5" model="res.partner">
+        <field name="name">Iryna Pivdenna</field>
+        <field name="city">Odesa</field>
+        <field name="partner_group_id" ref="shtepsel.partner_group_client"/>
+        <field name="country_id" ref="base.ua"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_transportation">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <br/><br/><br/>
+                    <div class="oe_structure"/>
+                    <div class="text_center">
+                        <h2>Transportation report</h2>
+                        <h4>for the period</h4>
+                    </div>
+                    <br/>
+                    <div>
+                        <h5>
+                            <b>Carrier</b>
+                        </h5>
+                        <ul style="line-height: 5px;">
+                            <h5>
+                                <b>Car</b>
+                            </h5>
+                            <ul>
+                                <div>
+                                    <div style="float: left; width: 40%;">
+                                        <b>
+                                            <t>Supplier</t>
+                                        </b>
+                                    </div>
+                                    <div style="display: inline-block; width: 40%;">
+                                        <b>
+                                            <t>Client</t>
+                                        </b>
+                                    </div>
+                                    <div style="float: right; width: 15%;">
+                                        <b>
+                                            <t>Efficiency</t>
+                                        </b>
+                                    </div>
+                                </div>
+                            </ul>
+                        </ul>
+                        <hr/>
+                        <div t-foreach="data" t-as="t">
+                            <h5>
+                                <t t-esc="t['carrier']"/>
+                            </h5>
+                            <ul t-foreach="t['data_carrier']" t-as="td" style="line-height: 5px;">
+                                <h6>
+                                    <t t-esc="td['car']"/>
+                                </h6>
+                                <ul t-foreach="td['data_car']" t-as="tr" style="line-height: 20px;">
+                                    <div>
+                                        <div style="float: left; width: 40%;">
+                                            <t t-esc="tr['supplier']"/>
+                                        </div>
+                                        <div style="display: inline-block; width: 40%;">
+                                            <t t-esc="tr['client']"/>
+                                        </div>
+                                        <div style="float: right; width: 15%;">
+                                            <t t-esc="tr['efficiency']"/>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </ul>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

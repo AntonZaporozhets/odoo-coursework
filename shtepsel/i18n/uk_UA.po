@@ -1,0 +1,950 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shtepsel
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-07 09:18+0000\n"
+"PO-Revision-Date: 2022-09-07 09:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "<b>Car</b>"
+msgstr "<b>Автомобіль</b>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "<b>Carrier</b>"
+msgstr "<b>Перевізник</b>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_construction_wizard_kanban
+msgid "<span>--</span>"
+msgstr ""
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.product_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "<span>kg</span>"
+msgstr "<span>кг</span>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "<span>km/h</span>"
+msgstr "<span>км/год</span>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "<span>km</span>"
+msgstr "<span>км</span>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.product_template_form_inherit
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "<span>m</span>"
+msgstr "<span>м</span>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "<span>m<sup>3</sup></span>"
+msgstr "<span>м<sup>3</sup></span>"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.res_partner_form_inherit
+msgid ""
+"<strong>Warning</strong>: for the correct operation of the module, update the coordinates of\n"
+"                    the partner's location on the \"Partner Assignment\" tab."
+msgstr ""
+"<strong>Попередження</strong>: для коректної роботи модуля оновіть "
+"координати знаходження партнера на вкладці «Призначення партнера»."
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__active
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__active
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__active
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__active
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__active
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__active
+msgid "Active"
+msgstr "Активний"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__act_location
+msgid "Actual location"
+msgstr "Фактичне місцезнаходження"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "Add a product"
+msgstr "Додайте товар"
+
+#. module: shtepsel
+#: model:res.groups,name:shtepsel.group_shtepsel_admin
+msgid "Administrator"
+msgstr "Адміністратор"
+
+#. module: shtepsel
+#: model:res.groups,comment:shtepsel.group_shtepsel_admin
+msgid "Administrators of the Shtepsel (full rights)"
+msgstr "Адміністратор Shtepsel (повні права)"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__average_speed
+msgid "Average speed"
+msgstr "Середня швидкість"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_3
+msgid "Cabernet wine"
+msgstr "Вино Каберне"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_1
+msgid "Cabinet"
+msgstr "Шафа"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_transportation_report_wizard_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_construction_wizard_kanban
+msgid "Car"
+msgstr "Автомобіль"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__car_id
+msgid "Car (free)"
+msgstr "Автомобіль (вільний)"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__car_carrying_capacity
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__car_carrying_capacity
+msgid "Car carrying capacity"
+msgstr "Вантажопідйомність автомобіля"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "Car characteristics"
+msgstr "Характеристики автомобіля"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__car_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__car_number_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__car_id
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "Car number"
+msgstr "Номер автомобіля"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__car_volume
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__car_volume
+msgid "Car volume"
+msgstr "Об'єм автомобіля"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__carrier_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__carrier_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__carrier_id
+msgid "Carrier"
+msgstr "Перевізник"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_carrier_action
+#: model:ir.ui.menu,name:shtepsel.shtepsel_carrier_menu
+msgid "Cars"
+msgstr "Автомобілі"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__client_id
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "Client"
+msgstr "Клієнт"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_6
+msgid "Coffee"
+msgstr "Кава"
+
+#. module: shtepsel
+#. openerp-web
+#: code:addons/shtepsel/static/src/xml/kanban_button.xml:0
+#, python-format
+msgid "Confirm"
+msgstr ""
+
+#. module: shtepsel
+#. openerp-web
+#: code:addons/shtepsel/static/src/xml/kanban_button.xml:0
+#, python-format
+msgid "Confirm routes"
+msgstr "Підтвердити маршрути"
+
+#. module: shtepsel
+#: model:ir.actions.server,name:shtepsel.shtepsel_route_construction_wizard_server_action
+#: model:ir.ui.menu,name:shtepsel.shtepsel_route_construction_wizard_menu
+msgid "Constructor"
+msgstr "Конструктор"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__cost
+msgid "Cost"
+msgstr "Вартість"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__count
+msgid "Count"
+msgstr "Кількість"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__create_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__create_uid
+msgid "Created by"
+msgstr "Створено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__create_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "Current state"
+msgstr "Поточний стан"
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_order__delivery_status__delivered
+msgid "Delivered"
+msgstr "Доставлено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__delivery_confirm
+msgid "Delivery confirmation"
+msgstr "Підтвердження доставки"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__delivery_cost
+msgid "Delivery cost"
+msgstr "Вартість доставки"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__delivery_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__delivery_date
+msgid "Delivery date"
+msgstr "Дата доставки"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__delivery_point
+msgid "Delivery point"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__delivery_status
+msgid "Delivery status"
+msgstr "Статус доставки"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__dispatch_date
+msgid "Dispatch date"
+msgstr "Дата відправлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__dispatch_point
+msgid "Dispatch point"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__display_name
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__display_name
+msgid "Display Name"
+msgstr "Відображуване ім'я"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__distance
+msgid "Distance"
+msgstr "Відстань"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__distance_segment
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__distance_segment
+msgid "Distance between points"
+msgstr "Відстань між точками"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__driver_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__driver_id
+msgid "Driver"
+msgstr "Водій"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__efficiency
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__efficiency
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "Efficiency"
+msgstr "Ефективність"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__end_date
+msgid "End date"
+msgstr "Дата закінчення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__finish_time_point
+msgid "Finish time point"
+msgstr "Час завершення"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_4
+msgid "Flour"
+msgstr "Борошно"
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_carrier__status__free
+msgid "Free"
+msgstr "Вільний"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_construction_wizard_kanban
+msgid "Give:"
+msgstr "Віддати:"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__group
+msgid "Group"
+msgstr "Група"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_product_product__height
+#: model:ir.model.fields,field_description:shtepsel.field_product_template__height
+msgid "Height"
+msgstr "Висота"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__id
+msgid "ID"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_carrier__status__inactive
+msgid "Inactive"
+msgstr "Неактивний"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__is_delayed
+msgid "Is Delayed"
+msgstr "Затримується"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__last_location
+msgid "Last Location"
+msgstr "Останнє місцерозташування"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard____last_update
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill____last_update
+msgid "Last Modified on"
+msgstr "Востаннє змінено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__write_uid
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__write_uid
+msgid "Last Updated by"
+msgstr "Востаннє оновлено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_partner_group__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__write_date
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__write_date
+msgid "Last Updated on"
+msgstr "Востаннє оновлено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__latitude
+msgid "Latitude"
+msgstr "Широта"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_product_product__length
+#: model:ir.model.fields,field_description:shtepsel.field_product_template__length
+msgid "Length"
+msgstr "Довжина"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__loading_status
+msgid "Loading / unloading"
+msgstr "Завантаження/розвантаження"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__longitude
+msgid "Longitude"
+msgstr "Довгота"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__max_height
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_max_height
+msgid "Max height"
+msgstr "Максимальна висота"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__max_length
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_max_length
+msgid "Max length"
+msgstr "Максимальна довжина"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__max_volume
+msgid "Max volume"
+msgstr "Максимальний об'єм"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__max_weight
+msgid "Max weight"
+msgstr "Максимальна вага"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order.py:0
+#: code:addons/shtepsel/models/shtepsel_order.py:0
+#: code:addons/shtepsel/models/shtepsel_order.py:0
+#: code:addons/shtepsel/models/shtepsel_order.py:0
+#: code:addons/shtepsel/models/shtepsel_waybill.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#, python-format
+msgid "No routes have been built. There are no free carriers"
+msgstr ""
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#, python-format
+msgid "No routes have been built. There are no orders"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_carrier__status__on_the_way
+msgid "On the way"
+msgstr "У дорозі"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__order_id
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "Order"
+msgstr "Замовлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__order_id
+msgid "Order (begin|end points)"
+msgstr "Замовлення (початкова|кінцева точки)"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__order_name_id
+msgid "Order ID (processed)"
+msgstr "ID замовлення (оброблено)"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_line_ids
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "Order Lines"
+msgstr "Рядки замовлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__order_id
+msgid "Order Reference"
+msgstr "Довідка замовлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_date
+msgid "Order date"
+msgstr "Дата замовлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__order_ids
+msgid "Order on segment path"
+msgstr "Замовлення на відрізку шляху"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__name
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_construction_wizard_kanban
+msgid "Order №"
+msgstr "Замовлення №"
+
+#. module: shtepsel
+#: model:ir.ui.menu,name:shtepsel.shtepsel_ordering_menu
+msgid "Ordering"
+msgstr "Оформлення замовлення"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_order_action
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__order_ids
+#: model:ir.ui.menu,name:shtepsel.shtepsel_order_menu
+msgid "Orders"
+msgstr "Замовлення"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_res_partner__partner_group_id
+#: model:ir.model.fields,field_description:shtepsel.field_res_users__partner_group_id
+msgid "Partner Group"
+msgstr "Група партнерів"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_partner_group_action
+#: model:ir.ui.menu,name:shtepsel.shtepsel_partner_group_menu
+msgid "Partner group"
+msgstr "Група партнерів"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.res_partner_search
+msgid "Partner groups"
+msgstr "Група партнерів"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.res_partner_act_window
+#: model:ir.ui.menu,name:shtepsel.res_partner_menu
+msgid "Partners"
+msgstr "Партнери"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order_line.py:0
+#, python-format
+msgid "Please check the height of the product"
+msgstr "Будь ласка, перевірте висоту товару"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order_line.py:0
+#, python-format
+msgid "Please check the length of the product"
+msgstr "Будь ласка, перевірте довжину товару"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order_line.py:0
+#, python-format
+msgid "Please check the price of the product"
+msgstr "Будь ласка, перевірте ціну товару"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order_line.py:0
+#, python-format
+msgid "Please check the weight of the product"
+msgstr "Будь ласка, перевірте вагу товару"
+
+#. module: shtepsel
+#: code:addons/shtepsel/models/shtepsel_order_line.py:0
+#, python-format
+msgid "Please check the width of the product"
+msgstr "Будь ласка, перевірте ширину товару"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__point
+msgid "Point"
+msgstr "Групи партнерів"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__point_arrival_time
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__point_arrival_time
+msgid "Point arrival time"
+msgstr "Час у точці доставки"
+
+#. module: shtepsel
+#: model:ir.model.fields,help:shtepsel.field_shtepsel_order_line__price
+msgid "Price at which the product is sold to customers."
+msgstr "Ціна, за якою товар продається клієнтам."
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_transportation_report_wizard_form
+msgid "Print"
+msgstr "Роздрукувати"
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_order__delivery_status__processed
+msgid "Processed"
+msgstr "Оброблено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__product_id
+msgid "Product"
+msgstr ""
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.product_template_form_inherit
+msgid "Product Parameters"
+msgstr "Параметри товару"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_product_template
+msgid "Product Template"
+msgstr "Шаблон товару"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.product_template_action
+#: model:ir.ui.menu,name:shtepsel.product_template_menu
+msgid "Products"
+msgstr "Товари"
+
+#. module: shtepsel
+#. openerp-web
+#: code:addons/shtepsel/static/src/xml/kanban_button.xml:0
+#, python-format
+msgid "Refresh"
+msgstr ""
+
+#. module: shtepsel
+#. openerp-web
+#: code:addons/shtepsel/static/src/xml/kanban_button.xml:0
+#, python-format
+msgid "Refresh after kanban changes"
+msgstr "Оновити після зміни канбану"
+
+#. module: shtepsel
+#: model:ir.actions.server,name:shtepsel.shtepsel_refresh_constructor_wizard_server_action
+msgid "Refresh constructor"
+msgstr "Оновити конструктор"
+
+#. module: shtepsel
+#: model:ir.ui.menu,name:shtepsel.shtepsel_reports_menu
+msgid "Reports"
+msgstr "Звіти"
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#: model:ir.actions.server,name:shtepsel.shtepsel_route_create_wizard_server_action
+#, python-format
+msgid "Route construction"
+msgstr "Побудова маршруту"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_route_construction_wizard
+msgid "Route construction wizard"
+msgstr "Майстер побудови маршруту"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__route_duration
+msgid "Route duration"
+msgstr "Тривалість маршруту"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_search
+msgid "Route number"
+msgstr "Номер маршруту"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__route_number_ids
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_waybill_form
+msgid "Route points"
+msgstr "Точки маршруту"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_route_points_construction_wizard
+msgid "Route points construction wizard"
+msgstr "Майстер побудови точок маршруту"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__route_number_id
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__route_number
+msgid "Route №"
+msgstr "Маршрут №"
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_route_action
+#: model:ir.ui.menu,name:shtepsel.shtepsel_route_menu
+#, python-format
+msgid "Routes"
+msgstr "Маршрути"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order_line__price
+msgid "Sales Price"
+msgstr "Ціна продажу"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_carrier_form
+msgid "Send to the garage"
+msgstr "Відправити в гараж"
+
+#. module: shtepsel
+#: model:ir.model.fields.selection,name:shtepsel.selection__shtepsel_order__delivery_status__sent
+msgid "Sent"
+msgstr "Відправлено"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__points_sequence
+msgid "Sequence of path points"
+msgstr "Послідовність точок шляху"
+
+#. module: shtepsel
+#: model:ir.ui.menu,name:shtepsel.shtepsel_settings_menu
+msgid "Settings"
+msgstr "Налаштування"
+
+#. module: shtepsel
+#: model:ir.module.category,name:shtepsel.category_shtepsel
+#: model:ir.ui.menu,name:shtepsel.shtepsel_main_menu
+msgid "Shtepsel"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_carrier
+msgid "Shtepsel carrier"
+msgstr "Shtepsel перевізник"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_order
+msgid "Shtepsel order"
+msgstr "Shtepsel замовлення"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_order_line
+msgid "Shtepsel order line"
+msgstr "Shtepsel рядки замовлень"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_partner_group
+msgid "Shtepsel partner group"
+msgstr "Shtepsel група партнерів"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_route
+msgid "Shtepsel routes"
+msgstr "Shtepsel маршрути"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_waybill
+msgid "Shtepsel waybill"
+msgstr "Shtepsel маршрутний лист"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_2
+msgid "Sofa"
+msgstr "Диван"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_transportation_report_wizard__start_date
+msgid "Start date"
+msgstr "Дата початку"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_carrier__status
+msgid "Status"
+msgstr "Статус"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__supplier_id
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "Supplier"
+msgstr "Постачальник"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_route_construction_wizard_kanban
+msgid "Take:"
+msgstr "Забрати:"
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#, python-format
+msgid ""
+"The dimensions of the product exceed the permissible dimensions for this car"
+msgstr "Розміри товару перевищують допустимі розміри для цього автомобіля"
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#, python-format
+msgid "The volume of the product exceeds the permissible volume for this car"
+msgstr "Об'єм товару перевищує допустимий для цього автомобіля"
+
+#. module: shtepsel
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#: code:addons/shtepsel/wizard/shtepsel_route_consrtuction_wizard.py:0
+#, python-format
+msgid "The weight of the product exceeds the permissible weight for this car"
+msgstr "Вага товару перевищує допустиму вагу для цього автомобіля"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_cost
+msgid "Total cost"
+msgstr "Загальна вартість"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_volume
+msgid "Total volume"
+msgstr "Загальний об'єм"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_order__order_weight
+msgid "Total weight"
+msgstr "Загальна вага"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "Total:"
+msgstr "Загалом:"
+
+#. module: shtepsel
+#: model:ir.ui.menu,name:shtepsel.shtepsel_transportation_menu
+msgid "Transportation"
+msgstr "Перевезення"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_transportation_report_wizard_act_window
+#: model:ir.actions.report,name:shtepsel.action_report_transportation
+#: model:ir.ui.menu,name:shtepsel.shtepsel_transportation_report_menu
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_transportation_report_wizard_form
+msgid "Transportation report"
+msgstr "Звіт про перевезення"
+
+#. module: shtepsel
+#: model:ir.model,name:shtepsel.model_shtepsel_transportation_report_wizard
+msgid "Transportation report wizard"
+msgstr "Майстер звіту про перевезення"
+
+#. module: shtepsel
+#: model:product.template,uom_name:shtepsel.product_1
+#: model:product.template,uom_name:shtepsel.product_2
+#: model:product.template,uom_name:shtepsel.product_3
+#: model:product.template,uom_name:shtepsel.product_4
+#: model:product.template,uom_name:shtepsel.product_5
+#: model:product.template,uom_name:shtepsel.product_6
+msgid "Units"
+msgstr "Модулі"
+
+#. module: shtepsel
+#: model:res.groups,name:shtepsel.group_shtepsel_user
+msgid "User"
+msgstr "Користувач"
+
+#. module: shtepsel
+#: model:ir.module.category,description:shtepsel.category_shtepsel
+msgid "User access levels for the Shtepsel"
+msgstr ""
+
+#. module: shtepsel
+#: model:res.groups,comment:shtepsel.group_shtepsel_user
+msgid "Users of the Shtepsel"
+msgstr ""
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__order_volume
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__volume_fullness
+msgid "Volume fullness"
+msgstr "Повний об'єм"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__volume_segment
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__volume_segment
+msgid "Volume on segment path"
+msgstr "Об'єм на відрізку шляху"
+
+#. module: shtepsel
+#: model:product.template,name:shtepsel.product_5
+msgid "Watermelon"
+msgstr "Кавун"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__waybill_order_ids
+msgid "Waybill Order"
+msgstr "Маршрутний лист Замовлення"
+
+#. module: shtepsel
+#: model:ir.actions.act_window,name:shtepsel.shtepsel_waybill_action
+#: model:ir.ui.menu,name:shtepsel.shtepsel_waybill_menu
+msgid "Waybills"
+msgstr "Маршрутні листи"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_construction_wizard__order_weight
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_waybill__weight_fullness
+msgid "Weight fullness"
+msgstr "Повна вага"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route__weight_segment
+#: model:ir.model.fields,field_description:shtepsel.field_shtepsel_route_points_construction_wizard__weight_segment
+msgid "Weight on segment path"
+msgstr "Вага на відрізку шляху"
+
+#. module: shtepsel
+#: model:ir.model.fields,field_description:shtepsel.field_product_product__width
+#: model:ir.model.fields,field_description:shtepsel.field_product_template__width
+msgid "Width"
+msgstr "Ширина"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.report_transportation
+msgid "for the period"
+msgstr "за період"
+
+#. module: shtepsel
+#: model_terms:ir.ui.view,arch_db:shtepsel.shtepsel_order_form
+msgid "from"
+msgstr "від"

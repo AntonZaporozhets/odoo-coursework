@@ -1,0 +1,47 @@
+{
+    'name': 'Shtepsel',
+    'version': '15.0.1.0.0',
+    'summary': '',
+    'category': 'Customizations',
+    'author': 'Anton Zaporozhets',
+    'website': '',
+    'license': 'OPL-1',
+    'depends': ['base', 'product', 'base_geolocalize'],
+    'external_dependencies': {'python': [], },
+    'data': [
+        'security/shtepsel_groups.xml',
+        'security/ir.model.access.csv',
+        'security/shtepsel_security.xml',
+        'data/partner_group_data.xml',
+        'views/shtepsel_menus.xml',
+        'views/res_partner_views.xml',
+        'views/product_views.xml',
+        'views/shtepsel_order_views.xml',
+        'views/shtepsel_carrier_views.xml',
+        'views/shtepsel_waybill_views.xml',
+        'views/shtepsel_route_views.xml',
+        'views/shtepsel_partner_group_views.xml',
+        'wizard/shtepsel_route_construction_wizard_views.xml',
+        'wizard/shtepsel_transportation_report_wizard_views.xml',
+        'reports/report_transportation.xml',
+        'reports/report.xml',
+    ],
+    'demo': [
+        'data/res_partner_demo.xml',
+        'data/product_demo.xml',
+        'data/order_demo.xml',
+        'data/carrier_demo.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'price': 0,
+    'currency': 'UAH',
+    'assets': {
+        'web.assets_backend': [
+            'shtepsel/static/src/js/kanban_button.js',
+        ],
+        'web.assets_qweb': [
+            'shtepsel/static/src/xml/kanban_button.xml',
+        ],
+    }
+}

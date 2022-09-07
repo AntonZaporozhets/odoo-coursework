@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+   <t t-extend="KanbanView.buttons" t-name="button_near_create.button">
+       <t t-jquery="button" t-operation="after">
+           <button t-if="widget.modelName == 'shtepsel.route_construction_wizard'"
+               class="btn btn-primary confirm_action_kanban oe_highlight"
+               type="button" title="Confirm routes">Confirm</button>
+           <button t-if="widget.modelName == 'shtepsel.route_construction_wizard'"
+               class="btn btn-warning refresh_action_kanban oe_highlight"
+               type="button" title="Refresh after kanban changes">Refresh</button>
+       </t>
+   </t>
+</templates>

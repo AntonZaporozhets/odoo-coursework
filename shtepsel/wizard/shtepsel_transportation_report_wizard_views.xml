@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shtepsel_transportation_report_wizard_form" model="ir.ui.view">
+        <field name="name">shtepsel.transportation_report_wizard.form</field>
+        <field name="model">shtepsel.transportation_report_wizard</field>
+        <field name="arch" type="xml">
+            <form string="Transportation report">
+                <group>
+                    <group>
+                        <field name="start_date"/>
+                    </group>
+                    <group>
+                        <field name="end_date"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_print_transportation_report" string="Print" type="object" class="btn-primary"/>
+                    <button special="cancel" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="shtepsel_transportation_report_wizard_act_window" model="ir.actions.act_window">
+        <field name="name">Transportation report</field>
+        <field name="res_model">shtepsel.transportation_report_wizard</field>
+        <field name="view_id" ref="shtepsel_transportation_report_wizard_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="shtepsel_transportation_report_menu"
+          action="shtepsel_transportation_report_wizard_act_window"
+          parent="shtepsel_reports_menu"
+          name="Transportation report" sequence="100"/>
+</odoo>

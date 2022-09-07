@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_inherit" model="ir.ui.view">
+        <field name="name">product.template.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[@name='general_information']" position="after">
+                <page string="Product Parameters" name="product_parameters">
+                    <group>
+                        <group>
+                            <label for="weight"/>
+                            <div class="o_row">
+                                <field name="weight"/>
+                                <span>kg</span>
+                            </div>
+                        </group>
+                        <group>
+                            <label for="length"/>
+                            <div class="o_row">
+                                <field name="length"/>
+                                <span>m</span>
+                            </div>
+                            <label for="width"/>
+                            <div class="o_row">
+                                <field name="width"/>
+                                <span>m</span>
+                            </div>
+                            <label for="height"/>
+                            <div class="o_row">
+                                <field name="height"/>
+                                <span>m</span>
+                            </div>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_action" model="ir.actions.act_window">
+        <field name="name">Products</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="res_model">product.template</field>
+    </record>
+
+    <menuitem id="product_template_menu"
+              action="product_template_action"
+              parent="shtepsel_ordering_menu"
+              name="Products" sequence="200"/>
+</odoo>

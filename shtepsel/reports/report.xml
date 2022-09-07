@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_transportation" model="ir.actions.report">
+        <field name="name">Transportation report</field>
+        <field name="model">shtepsel.transportation_report_wizard</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">shtepsel.report_transportation</field>
+        <field name="report_file">shtepsel.report_transportation</field>
+        <field name="binding_model_id" ref="model_shtepsel_transportation_report_wizard"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

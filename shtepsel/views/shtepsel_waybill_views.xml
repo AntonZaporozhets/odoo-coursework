@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shtepsel_waybill_tree" model="ir.ui.view">
+        <field name="name">shtepsel.waybill.tree</field>
+        <field name="model">shtepsel.waybill</field>
+        <field name="arch" type="xml">
+            <tree create="false">
+                <field name="route_number"/>
+                <field name="carrier_id" widget="many2one_tags"/>
+                <field name="car_id" widget="many2one_tags"/>
+                <field name="driver_id" widget="many2one_tags"/>
+                <field name="route_duration" widget="float_time"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="shtepsel_waybill_pivot" model="ir.ui.view">
+        <field name="name">shtepsel.waybill.pivot</field>
+        <field name="model">shtepsel.waybill</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="carrier_id" type="row"/>
+                <field name="driver_id" type="row"/>
+                <field name="route_number" type="row"/>
+                <field name="finish_time_point" interval="month" type="col"/>
+                <field name="route_duration" type="measure" widget="float_time"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="shtepsel_waybill_form" model="ir.ui.view">
+        <field name="name">shtepsel.waybill.form</field>
+        <field name="model">shtepsel.waybill</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="route_number"/>
+                            <field name="carrier_id" widget="many2one_tags"/>
+                            <field name="car_id" widget="many2one_tags"/>
+                            <field name="driver_id" widget="many2one_tags"/>
+                        </group>
+                        <group>
+                            <field name="car_carrying_capacity" invisible="1"/>
+                            <field name="car_volume" invisible="1"/>
+                            <field name="weight_fullness" widget="progressbar"
+                                   options="{'current_value':'weight_fullness','max_value':'car_carrying_capacity'}"/>
+                            <field name="volume_fullness" widget="progressbar"
+                                   options="{'current_value':'volume_fullness','max_value':'car_volume'}"/>
+                            <field name="route_duration" widget="float_time"/>
+                        </group>
+                        <separator/>
+                        <field name="route_number_ids">
+                            <tree create="false" delete="false" editable="top">
+                                <field name="point_arrival_time"/>
+                                <field name="order_ids" widget="many2many_tags"/>
+                                <field name="point"/>
+                                <field name="loading_status"/>
+                                <field name="order_id" widget="many2one_tags"/>
+                                <field name="distance_segment"/>
+                                <field name="delivery_confirm" class="text-center"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="shtepsel_waybill_action" model="ir.actions.act_window">
+        <field name="name">Waybills</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="view_mode">tree,pivot,form</field>
+        <field name="res_model">shtepsel.waybill</field>
+    </record>
+
+    <menuitem id="shtepsel_waybill_menu"
+              action="shtepsel_waybill_action"
+              parent="shtepsel_transportation_menu"
+              name="Waybills" sequence="300"/>
+
+</odoo>

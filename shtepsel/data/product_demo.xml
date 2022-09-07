@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="product_1" model="product.template">
+        <field name="name">Cabinet</field>
+        <field name="weight">100</field>
+        <field name="length">2</field>
+        <field name="width">0.8</field>
+        <field name="height">0.6</field>
+        <field name="list_price">200</field>
+    </record>
+    <record id="product_2" model="product.template">
+        <field name="name">Sofa</field>
+        <field name="weight">150</field>
+        <field name="length">2</field>
+        <field name="width">1.3</field>
+        <field name="height">0.8</field>
+        <field name="list_price">300</field>
+    </record>
+    <record id="product_3" model="product.template">
+        <field name="name">Cabernet wine</field>
+        <field name="weight">12</field>
+        <field name="length">0.4</field>
+        <field name="width">0.3</field>
+        <field name="height">0.3</field>
+        <field name="list_price">60</field>
+    </record>
+    <record id="product_4" model="product.template">
+        <field name="name">Flour</field>
+        <field name="weight">50</field>
+        <field name="length">0.7</field>
+        <field name="width">0.4</field>
+        <field name="height">0.3</field>
+        <field name="list_price">20</field>
+    </record>
+    <record id="product_5" model="product.template">
+        <field name="name">Watermelon</field>
+        <field name="weight">100</field>
+        <field name="length">1</field>
+        <field name="width">1</field>
+        <field name="height">1</field>
+        <field name="list_price">10</field>
+    </record>
+    <record id="product_6" model="product.template">
+        <field name="name">Coffee</field>
+        <field name="weight">10</field>
+        <field name="length">0.6</field>
+        <field name="width">0.6</field>
+        <field name="height">0.6</field>
+        <field name="list_price">1000</field>
+    </record>
+
+</odoo>

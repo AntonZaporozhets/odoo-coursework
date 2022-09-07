@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="order_line_1" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_1"/>
+        <field name="count">1</field>
+    </record>
+    <record id="order_line_2" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_2"/>
+        <field name="count">1</field>
+    </record>
+    <record id="order_1" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_1"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_4"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_1')),(4, ref('shtepsel.order_line_2'))]"/>
+    </record>
+
+    <record id="order_line_3" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_4"/>
+        <field name="count">1</field>
+    </record>
+    <record id="order_2" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_3"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_5"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_3'))]"/>
+    </record>
+
+    <record id="order_line_4" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_3"/>
+        <field name="count">3</field>
+    </record>
+    <record id="order_line_5" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_5"/>
+        <field name="count">1</field>
+    </record>
+    <record id="order_3" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_2"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_2"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_4')),(4, ref('shtepsel.order_line_5'))]"/>
+    </record>
+
+    <record id="order_line_6" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_6"/>
+        <field name="count">2</field>
+    </record>
+    <record id="order_4" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_5"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_1"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_6'))]"/>
+    </record>
+
+    <record id="order_line_7" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_4"/>
+        <field name="count">2</field>
+    </record>
+    <record id="order_5" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_3"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_4"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_7'))]"/>
+    </record>
+
+    <record id="order_line_8" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_3"/>
+        <field name="count">2</field>
+    </record>
+    <record id="order_6" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_2"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_3"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_8'))]"/>
+    </record>
+
+    <record id="order_line_9" model="shtepsel.order_line">
+        <field name="product_id" ref="shtepsel.product_2"/>
+        <field name="count">1</field>
+    </record>
+    <record id="order_7" model="shtepsel.order">
+        <field name="supplier_id" ref="shtepsel.res_partner_supplier_1"/>
+        <field name="client_id" ref="shtepsel.res_partner_client_3"/>
+        <field name="order_line_ids" eval="[(4, ref('shtepsel.order_line_9'))]"/>
+    </record>
+
+</odoo>

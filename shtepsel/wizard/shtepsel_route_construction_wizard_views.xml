@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="shtepsel_route_construction_wizard_kanban" model="ir.ui.view">
+        <field name="name">shtepsel.route_construction_wizard.kanban</field>
+        <field name="model">shtepsel.route_construction_wizard</field>
+        <field name="arch" type="xml">
+            <kanban string="Car" default_group_by="car_id" group_create="false" quick_create="false" sample="1">
+                <field name="order_name_id" widget="many2one_tags"/>
+                <field name="car_id" widget="many2one_tags"/>
+                <field name="dispatch_date"/>
+                <field name="delivery_date"/>
+                <field name="dispatch_point"/>
+                <field name="delivery_point"/>
+                <field name="efficiency"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h4>Order №
+                                            <field name="order_name_id" widget="many2one_tags"/>
+                                        </h4>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <span class="float-right text-right">
+                                            <field name="efficiency" widget="percentpie" options="{'max_value':100}"/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <br/>
+                                <ul>
+                                    <li>
+                                        <span style="font-size:14px">Take:
+                                            <field name="dispatch_date"/>
+                                            <span>--</span>
+                                            <field name="dispatch_point"/>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span style="font-size:14px">Give:
+                                            <field name="delivery_date"/>
+                                            <span>--</span>
+                                            <field name="delivery_point"/>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="shtepsel_route_construction_wizard_server_action" model="ir.actions.server">
+        <field name="name">Constructor</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_shtepsel_route_construction_wizard" />
+        <field name="state">code</field>
+        <field name="code">action=model.optimal_carriers()</field>
+    </record>
+
+    <menuitem id="shtepsel_route_construction_wizard_menu"
+          action="shtepsel_route_construction_wizard_server_action"
+          parent="shtepsel_transportation_menu"
+          name="Constructor" sequence="100"/>
+
+<!--    <record id="shtepsel_route_points_construction_wizard" model="ir.ui.view">-->
+<!--        <field name="name">shtepsel.route_points_construction_wizard.tree</field>-->
+<!--        <field name="model">shtepsel.route_points_construction_wizard</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="car_number_id" widget="many2one_tags"/>-->
+<!--                <field name="order_id" widget="many2one_tags"/>-->
+<!--                <field name="order_ids" widget="many2many_tags"/>-->
+<!--                <field name="points_sequence"/>-->
+<!--                <field name="latitude"/>-->
+<!--                <field name="longitude"/>-->
+<!--                <field name="weight_segment"/>-->
+<!--                <field name="volume_segment"/>-->
+<!--                <field name="distance_segment"/>-->
+<!--                <field name="point_arrival_time"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record id="shtepsel_route_points_construction_wizard_action" model="ir.actions.act_window">-->
+<!--        <field name="name">Route point</field>-->
+<!--        <field name="type">ir.actions.act_window</field>-->
+<!--        <field name="view_mode">tree</field>-->
+<!--        <field name="res_model">shtepsel.route_points_construction_wizard</field>-->
+<!--    </record>-->
+
+<!--    <menuitem id="shtepsel_route_points_construction_wizard_menu"-->
+<!--              action="shtepsel_route_points_construction_wizard_action"-->
+<!--              parent="shtepsel_settings_menu"-->
+<!--              name="Route point" sequence="300"/>-->
+
+    <record id="shtepsel_route_create_wizard_server_action" model="ir.actions.server">
+        <field name="name">Route construction</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_shtepsel_route_construction_wizard" />
+        <field name="state">code</field>
+        <field name="code">action=model.route_create()</field>
+    </record>
+    <record id="shtepsel_refresh_constructor_wizard_server_action" model="ir.actions.server">
+        <field name="name">Refresh constructor</field>
+        <field name="type">ir.actions.server</field>
+        <field name="model_id" ref="model_shtepsel_route_construction_wizard" />
+        <field name="state">code</field>
+        <field name="code">action=model.refresh_constructor()</field>
+    </record>
+
+</odoo>
